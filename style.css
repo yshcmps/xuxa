@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(145, 211, 184);
+    color:  rgb(255, 255, 255);
+    text-align: center;
+}
+
+#pedra{
+    border-radius: 10px; 
+    width: 800px;
+    height:500px;
+}
+
+#nah{
+    border-radius: 10px; 
+}
+
+#rodrigofaro{
+    border-radius: 10px; 
+}
+
+#anabele{
+    border-radius: 10px; 
+    width: 500px;
+    height:500px;
+}
+
+#hannibal{
+    border-radius: 10px;
+}
+
+#garrafa{
+    border-radius: 10px;
+    width: 600px;
+    height:350px;
+}
+
+#lixo{
+    border-radius: 10px;
+    width: 500px;
+    height:500px;
+}
+
+#strangers{
+    border-radius: 10px;
+    width: 500px;
+    height:500px;
+}
+
+    #teclado{
+        border-radius: 10px;  
+    }
+
+    #telefone{
+        border-radius: 10px; 
+    }
+
+    #abc{
+        border-radius: 10px;   
+    }

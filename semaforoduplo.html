@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Arduino</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">01</a>
+        <a href="./semaforosimples.html">02</a>
+        <a href="./simplespratico.html">03</a>
+       <a href="./semaforoduplo.html">04</a>
+       <a href="./duplopratico.html">05</a>
+       <a href="./Contadorcrescente.html">06</a>
+       <a href="Contadordecrescente.html">07</a>
+       <a href="Contadorduplodecrescente.html">08</a>
+    </nav>
+    <h2>Semáforo duplo</h2>
+    <img id="garrafa" src="./pagina4foto1.jpg" alt="print de tela do circuito">
+    <br>
+    <small>Fonte: TinkerCad</small>
+    <br>
+    <a href="https://www.tinkercad.com/things/kLLdwkQa48B-naosabo/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard">TinkerCad</a>
+    <br>
+    <h2>Código C++</h2>
+    <pre>// C++ code
+        //
+        void setup()
+        {
+          pinMode(8, OUTPUT);
+          pinMode(13, OUTPUT);
+          pinMode(10, OUTPUT);
+          pinMode(9, OUTPUT);
+          pinMode(12, OUTPUT);
+          pinMode(11, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(8, HIGH);
+          digitalWrite(13, HIGH);
+          digitalWrite(10, LOW);
+          digitalWrite(9, LOW);
+          digitalWrite(12, LOW);
+          digitalWrite(11, LOW);
+          delay(10); // Delay a little bit to improve simulation performance
+        }</pre>
+</body>
+</html>

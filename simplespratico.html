@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Arduino</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">01</a>
+        <a href="./semaforosimples.html">02</a>
+        <a href="./simplespratico.html">03</a>
+       <a href="./semaforoduplo.html">04</a>
+       <a href="./duplopratico.html">05</a>
+       <a href="./Contadorcrescente.html">06</a>
+       <a href="Contadordecrescente.html">07</a>
+       <a href="Contadorduplodecrescente.html">08</a>
+    </nav>
+    <h2>Programação do semáforo simples com contador de led intermitente</h2>
+    <img id="anabele" src="./pagina03foto1.jpeg" alt="">
+    <br>
+    <h2>Semáforo simples, parte prática</h2>
+    <a href="https://youtube.com/shorts/m2XCyz27SYI?si=jcLsE54ujrUNCy3q">Vídeo da montagem prática</a>
+    <br>
+    <h2>Print do código</h2>
+    <img id="hannibal" src="./pagina3foto2.jpg" alt="">
+    <br>
+    <small>Fonte: TinkerCad</small>
+    <br>
+    <a href="https://www.tinkercad.com/things/jrxdLB5Z6Ne-daring-allis-esboo/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard">TinkerCad</a>
+    <br>
+    <h2>Código C++</h2>
+    <pre>// C++ code
+        //
+        int socrro = 0;
+        
+        void setup()
+        {
+          pinMode(12, OUTPUT);
+          pinMode(4, OUTPUT);
+          pinMode(8, OUTPUT);
+        
+          socrro = 0;
+        }
+        
+        void loop()
+        {
+          while (!(socrro == 2)) {
+            digitalWrite(12, HIGH);
+            delay(9000); // Wait for 9000 millisecond(s)
+            digitalWrite(4, HIGH);
+            digitalWrite(12, LOW);
+            delay(7000); // Wait for 7000 millisecond(s)
+            digitalWrite(8, HIGH);
+            digitalWrite(4, LOW);
+            delay(2000); // Wait for 2000 millisecond(s)
+            digitalWrite(8, LOW);
+            socrro += 1;
+          }
+          digitalWrite(8, HIGH);
+          delay(1000); // Wait for 1000 millisecond(s)
+          digitalWrite(8, LOW);
+          delay(1000); // Wait for 1000 millisecond(s)
+        }</pre>
+</body>
+</html>

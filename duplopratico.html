@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto Arduino</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">01</a>
+        <a href="./semaforosimples.html">02</a>
+        <a href="./simplespratico.html">03</a>
+       <a href="./semaforoduplo.html">04</a>
+       <a href="./duplopratico.html">05</a>
+       <a href="./Contadorcrescente.html">06</a>
+       <a href="Contadordecrescente.html">07</a>
+       <a href="Contadorduplodecrescente.html">08</a>
+    </nav>
+    <h2>Programação do semáforo duplo</h2>
+    <img id="lixo" src="./pagina5foto1.jpeg" alt="">
+    <br>
+    <h2>Semáforo duplo, parte prática</h2>
+    <a href="https://youtube.com/shorts/TXFmXmtB3i8?si=_RxpogWkNZnNLiOk">Vídeo da montagem prática</a>
+    <br>
+    <h2>Print do código</h2>
+    <img id="strangers" src="./pagina5foto2.jpg" alt="">
+    <br>
+    <small>Fonte: TinkerCad</small>
+    <br>
+    <a href="https://www.tinkercad.com/things/jrxdLB5Z6Ne-daring-allis-esboo/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard">TinkerCad</a>
+    <br>
+    <h2>Código C++</h2>
+    <pre>// C++ code
+        //
+        void setup()
+        {
+          pinMode(8, OUTPUT);
+          pinMode(13, OUTPUT);
+          pinMode(10, OUTPUT);
+          pinMode(9, OUTPUT);
+          pinMode(12, OUTPUT);
+          pinMode(11, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(8, HIGH);
+          digitalWrite(13, HIGH);
+          digitalWrite(10, LOW);
+          digitalWrite(9, LOW);
+          digitalWrite(12, LOW);
+          digitalWrite(11, LOW);
+          delay(10); // Delay a little bit to improve simulation performance
+        }</pre>
+</body>
+</html>
